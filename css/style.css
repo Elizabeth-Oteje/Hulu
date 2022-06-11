@@ -117,7 +117,7 @@ h4 {
     position: relative;
 }
 
-.header nav .login-btn {
+.header nav #myBtn {
     cursor: pointer;
     background: none;
     color: #fff;
@@ -151,7 +151,7 @@ h4 {
 
 .header::after {
     content: '';
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -219,10 +219,10 @@ h4 {
     height: 100%;
     background: linear-gradient(
         156.82deg,
-        rgba(0, 0, 0, 0.6)4.58%
-        rgba(0, 0, 0, 0)69.61%
+        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0)
     ),
-    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2)4.71%, rgba(0, 0, 0, 0)71.49%);
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
 }
 
 .categories .cover-text {
@@ -357,6 +357,7 @@ h4 {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
+
 }
 
 .modal-box {
@@ -367,6 +368,21 @@ h4 {
     position: relative;
     animation: modalopen 1s;
 }
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
 @keyframes modalopen {
     from {
@@ -392,14 +408,14 @@ h4 {
     text-align: center;
 }
 
-.modal .close {
+/* .modal .close {
     cursor:pointer;
     height: 23px;
     width: 23px;
     position: absolute;
     top: 20px;
     right: 20px;
-}
+} */
 
 .modal .modal-footer {
     background: #f7f7f9;
